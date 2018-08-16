@@ -1,0 +1,46 @@
+.navbar-brand {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+}
+.navbar {
+    padding-top: 0;
+    padding-bottom: 2rem;
+    border-bottom-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+}
+.site-body {
+    background: #f1f1f1;
+    padding: 0;
+    margin-top: 80px;
+}
+.shadows {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.bio {
+    padding: 1px;
+}
+.intro {
+    padding-top: 1.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-bottom: 5rem;
+}
+.avatar {
+    background-size: cover;
+    background: url("../img/avatar.png") center center;
+}
+.resume {
+    margin-top: 1.3rem;
+}
+.btn:hover {
+    background: #17a2b8;
+    color: white;
+}
+img.rounded-circle {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.22);
+}
+.center {
+    text-align: center;
+}

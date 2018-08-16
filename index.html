@@ -7,17 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <!--debug css-->
+    <link rel="stylesheet" href="css/debug.css">
     <link rel="icon" href="img/favicon.ico">
     <title>SY0UYU's WEBSITE</title>
 </head>
 <body>
+<div id="app">
+    <div class="site-header">
+        <div class="nav navbar navbar-expand-md navbar-dark bg-secondary shadows">
+            <a class="navbar-brand" :href="homepage"><img class="rounded-circle shadows" src="img/brand.png" alt="home" height="300%"></a>
+        </div>
+    </div>
+    <div class="site-body container col-8 shadows">
+        <div class="container">
+            <div class="row">
+                <div class="intro col-8">
+                    <ul class="list-group">
+                        <li class="list-group-item"><h1>自我介绍</h1></li>
+                        <li class="list-group-item"><div>姓名：<span class="float-right">{{ name }}</span></div></li>
+                        <li class="list-group-item"><div>邮箱：<span class="float-right">{{ email }}</span></div></li>
+                        <li class="list-group-item"><div>Github：<a class="float-right" :href="github">https://github.com/SY0UYU</a></div></li>
+                    </ul>
+                    <ul class="list-group resume center">
+                        <li class="list-group-item"><div><button type="button" href="#" class="btn btn-block">个人简历</button></div></li>
+                        <li class="list-group-item"><div>各位HR，请点击上方查看简历</div></li>
+                    </ul>
+                </div>
+                <div class="avatar col-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="card-footer fixed-bottom center">
+            {{ footbarmsg }}
+        </div>
+    </div>
+</div>
 <!------------------------------------->
-
+<!--<div id="app">-->
+    <!--&lt;!&ndash;{{ message }}&ndash;&gt;-->
+    <!--<span v-if="seen">Now you see me</span>-->
+    <!--<br>-->
+    <!--<ol>-->
+        <!--<li v-for="item in items">-->
+            <!--{{ item.name }}-->
+        <!--</li>-->
+    <!--</ol>-->
+    <!--<br>-->
+    <!--<p>{{ message }}</p>-->
+    <!--<button v-on:click="reverseMessage">ReverseMessage</button>-->
+    <!--<br>-->
+    <!--<label>-->
+        <!--Input the content to reverse that all you need!-->
+        <!--<input type="text" name="p-msg" v-model="message">-->
+    <!--</label>-->
+    <!--<ol>-->
+        <!--<todo-item v-for="item in items" v-bind:todo="item" v-bind:key="item.id"></todo-item>-->
+    <!--</ol>-->
+<!--</div>-->
 <!------------------------------------->
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/vue.js"></script>
+<script src="js/vue.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
