@@ -27,7 +27,7 @@
                         <li class="list-group-item"><h1>自我介绍</h1></li>
                         <li class="list-group-item"><div>姓名：<span class="float-right">{{ name }}</span></div></li>
                         <li class="list-group-item"><div>邮箱：<span class="float-right">{{ email }}</span></div></li>
-                        <li class="list-group-item"><div>Github：<a class="float-right" :href="github">https://github.com/SY0UYU</a></div></li>
+                        <li class="list-group-item"><div>Github：<a class="float-right" :href="github">{{ github }}</a></div></li>
                     </ul>
                     <ul class="list-group resume center">
                         <li class="list-group-item"><div><button type="button" href="#" class="btn btn-block">个人简历</button></div></li>
@@ -44,29 +44,6 @@
         </div>
     </div>
 </div>
-<!------------------------------------->
-<!--<div id="app">-->
-    <!--&lt;!&ndash;{{ message }}&ndash;&gt;-->
-    <!--<span v-if="seen">Now you see me</span>-->
-    <!--<br>-->
-    <!--<ol>-->
-        <!--<li v-for="item in items">-->
-            <!--{{ item.name }}-->
-        <!--</li>-->
-    <!--</ol>-->
-    <!--<br>-->
-    <!--<p>{{ message }}</p>-->
-    <!--<button v-on:click="reverseMessage">ReverseMessage</button>-->
-    <!--<br>-->
-    <!--<label>-->
-        <!--Input the content to reverse that all you need!-->
-        <!--<input type="text" name="p-msg" v-model="message">-->
-    <!--</label>-->
-    <!--<ol>-->
-        <!--<todo-item v-for="item in items" v-bind:todo="item" v-bind:key="item.id"></todo-item>-->
-    <!--</ol>-->
-<!--</div>-->
-<!------------------------------------->
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
